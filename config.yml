@@ -1,0 +1,16 @@
+title: python_c1
+description: Python Course C1
+template:
+  repo: python_c1-template
+  name: python_c1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
